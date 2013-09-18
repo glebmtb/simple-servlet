@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<HEAD>
+    <TITLE>Передача HTTP GET запроса</TITLE>
+    <META HTTP-EQUIV="Content-Type"
+          CONTENT="text/html; charset=utf-8">
+    <!--http://stackoverflow.com/questions/2204870/java-jsp-how-to-get-domain-url-web-application-name-->
+    <base href="http://localhost:8080/simple_servlet/">
+</HEAD>
+<body>
+
+<!--атрибут action элемента form содержит URL, указывающий на сервлет,
+а атрибут method элемента form указывает, что браузер отправляет серверу запрос get,
+что приводит к вызову метода doGet сервлета-->
+<form action="welcome2" method="get" accept-charset="UTF-8">
+    <p><label>Введите свое Имя и нажмите кнопку <br>
+        <input type="text" name="name">
+        <input type="submit" value="Готово"/>
+    </label></p>
+</form>
+</body>
+</html>

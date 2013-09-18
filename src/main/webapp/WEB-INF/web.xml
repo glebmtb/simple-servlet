@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns="http://java.sun.com/xml/ns/javaee"
-           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 		  http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
-           version="2.5">
+         version="2.5">
 
     <!--Общее описание вашего Web-приложения-->
     <!--display-name - имя которое может быть отображено администратору сервера-->
     <display-name>
-           Показывает построение простого веб-приложения на основе сервлетов.
+        Показывает построение простого веб-приложения на основе сервлетов.
     </display-name>
 
     <!--Определение сервлета-->
@@ -22,10 +22,21 @@
         </servlet-class>
     </servlet>
 
+    <servlet>
+        <servlet-name>paramServlet</servlet-name>
+        <servlet-class>ParamServlet</servlet-class>
+    </servlet>
+
     <!--Задание карты сервлета-->
     <!--Шаблон URL помогает серверу определять, какие запросы посылаются сервлету.-->
     <servlet-mapping>
         <servlet-name>simpleServlet</servlet-name>
         <url-pattern>/welcome1</url-pattern>
     </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>paramServlet</servlet-name>
+        <url-pattern>/welcome2</url-pattern>
+    </servlet-mapping>
+
 </web-app>
