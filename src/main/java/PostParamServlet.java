@@ -24,7 +24,7 @@ public class PostParamServlet  extends HttpServlet
                     "<html>\n" +
                     "<body>\n" +
                     "\n" +
-                    "<h1>Servlet c передачей GET параметров</h1>\n" +
+                    "<h1>Servlet c передачей POST параметров</h1>\n" +
                     "\n" +
                     "<p>" + name + ", добро пожаловать  в Servlet</p>\n" +
                     "\n" +
