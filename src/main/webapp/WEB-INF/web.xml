@@ -23,9 +23,14 @@
     </servlet>
 
     <servlet>
-        <servlet-name>paramServlet</servlet-name>
-        <servlet-class>ParamServlet</servlet-class>
+        <servlet-name>getParamServlet</servlet-name>
+        <servlet-class>GetParamServlet</servlet-class>
     </servlet>
+
+  <servlet>
+      <servlet-name>postParamServlet</servlet-name>
+      <servlet-class>PostParamServlet</servlet-class>
+  </servlet>
 
     <!--Задание карты сервлета-->
     <!--Шаблон URL помогает серверу определять, какие запросы посылаются сервлету.-->
@@ -35,8 +40,12 @@
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>paramServlet</servlet-name>
+        <servlet-name>getParamServlet</servlet-name>
         <url-pattern>/welcome2</url-pattern>
     </servlet-mapping>
 
+   <servlet-mapping>
+       <servlet-name>postParamServlet</servlet-name>
+       <url-pattern>/welcome3</url-pattern>
+   </servlet-mapping>
 </web-app>
