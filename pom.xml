@@ -19,7 +19,7 @@
     </dependencies>
 
     <build>
-        <finalName>simple_servlet</finalName>
+        <finalName>simple-servlet</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
